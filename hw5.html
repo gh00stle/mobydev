@@ -1,0 +1,72 @@
+<!-- [2.1] Form Elements -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form Elements</title>
+</head>
+<body>
+<!-- Task 1: Creating a simple form -->
+ <fieldset>
+    <!-- <fieldset> element is used to logically group form elements -->
+ <fieldset>
+    <!-- <fieldset> element is used to logically group form elements -->
+    <legend>Registration</legend>
+   <form action="/submit" method="post">
+       <!-- creates a container for all form elements -->
+       <label for="name">Name:</label>
+            <!-- <label> binds a text label to a form element-->
+       <input type="text" id="name" name="name" required>
+            <!-- <input> element is used for user input -->
+        
+        <label for="email">Email:</label>
+               <!-- <label> binds a text label to a form element-->
+       <input type="email" id="email" name="email" required>
+           <!-- <input> element is used for user input -->
+
+       <label for="password">Password:</label>
+              <!-- <label> binds a text label to a form element-->
+       <input type="password" id="password" name="password" required>  
+              <!-- <input> element is used for user input -->
+    </form>
+        <!-- this closes the container -->
+         </fieldset>
+   <br>
+   <fieldset>
+    <!-- <fieldset> element is used to logically group form elements -->
+    <legend>Comments</legend>
+    <label for="comments">Comment:</label>
+        <!-- <label> binds a text label to a form element-->
+    <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+        <!-- <textarea> element is used for multi-line text input -->
+    <button type="submit">Submit</button>
+        <!-- this creates a submit button  -->
+    </fieldset>
+
+<!-- Task 2: Selection fields and buttons -->
+ <fieldset> 
+    <!-- <fieldset> element is used to logically group form elements -->
+<legend>Country</legend>
+        <label for="country">Country:</label>
+            <!-- <label> binds a text label to a form element-->
+        <select id="country" name="country" required>
+            <!-- <select> element is used to create a drop-down list -->
+           <option value="">Select your country</option>
+           <option value="kz">Kazakhstan</option>
+           <option value="sm">Samoa</option>
+           <option value="zw">Zimbabwe</option>
+           <option value="nk">North Korea</option>
+            <!-- <option> function creates an option inside the drop-down list -->
+        </select>
+        </fieldset>
+            <!-- </select> closes the drop-down list -->
+        <br>
+        <br>
+        <button type="submit">Submit Form</button>
+            <!-- the element creates a 'submit' button -->
+        <button type="reset">Reset Form</button>
+            <!-- the element creates a 'reset' button -->
+         </fieldset>
+    </body>
+</html>
