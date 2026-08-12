@@ -1,0 +1,35 @@
+p {
+    color: rgb(70, 70, 187);
+    font-size: 16px;
+}
+
+h2 {
+    color: black;
+    font-size: 19px;
+}
+
+#subtitle {
+    background-color: rgb(35, 58, 109);
+    text-align: center;
+    color: white;
+}
+
+#title {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+}
+
+.container {
+   padding: 20px;
+   border: 1px solid black;
+}
+
+.h1 {
+    text-align: center;
+}
+
+.ingredients {
+    color: rgb(35, 58, 109);
+    font-weight: bold;
+}
