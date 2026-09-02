@@ -1,0 +1,13 @@
+
+Task 4: Working with dimensions and display
+1. Create several elements with different sizes.
+2. Apply the following properties:
+  - `width` and `height` — set the width and height for the elements.
+  - `overflow' — set content management if it goes beyond the boundaries 
+  of the block (for example, `hidden`, `scroll`).
+
+The final page
+1. Collect all the examples in one HTML document.
+2. Design the page by adding comments to explain the use of each property.
+3. Check that all styles are working as intended.
+Upload your homework to Github and provide a link to the repository.
