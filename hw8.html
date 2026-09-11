@@ -1,0 +1,60 @@
+<!-- [3.1] Units and Colour Models in CSS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Units and Colour Models in CSS</title>
+</head>
+<style>
+   .container {
+     width: 320px;
+     height: 150%;
+     /* --> % (percent): relative to the parent element. */
+     background-color: rgb(207, 207, 207);
+     /* --> RGB is used to specify colour, which takes three values from 0 to 255 */
+     margin: 5px;
+   }
+   p {
+    font-size: 1.25em;
+    /* --> em: relative to the font size of the parent element. */
+   } 
+   h3 {
+    font-size: 1.5rem;
+    /* --> REM units in CSS are a relative way to size elements based on your website's root font size. */
+   }
+   .image {
+    padding: 200px;
+    background-image: url('catphoto.jpg');
+    color: darkgray;
+   }
+   .hex {
+    padding: 200px;
+    margin: 10px;
+    color: #5a5654;
+    background-color: #afa8a4;
+    /* --> HEX used to specify colour, represents the intensity of red, green, and blue colors (RGB). */
+   }
+   .rgb {
+    padding: 150px;
+    margin: 10px;
+    background-color: rgba(207, 207, 207, 0.562);
+     /* --> RGB is used to specify colour, which takes three values from 0 to 255 */
+     /* --> RGBA is an extension of the RGB model, adding a fourth value—the alpha channel (opacity).  */
+    color: rgba(82, 82, 82, 0.507)
+     /* --> RGB is used to specify colour, which takes three values from 0 to 255 */
+     /* --> RGBA is an extension of the RGB model, adding a fourth value—the alpha channel (opacity).  */
+   }
+</style>
+<body>
+    <h1>Units and Color Models in CSS</h1>
+ <div class="container">
+    <h3>In CSS, a variety of units are used to specify different style properties, such as sizes, margins, padding, fonts, etc.</h3>
+    <p>ABSOLUTE units: Absolute units specify fixed values that are independent of other elements on the page.</p>
+    <p>RELATIVE units: Relative units define sizes in relation to other elements or properties.</p>
+</div>
+    <h4 class="image">Cat</h4>
+    <h2 class="hex">block with hex colours</h2>
+    <h2 class="rgb">block with rgba colours</h2>
+</body>
+
