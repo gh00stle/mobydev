@@ -1,0 +1,110 @@
+<!-- [3.3] Linear and Block Elements -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Inline and Block Elements</title>
+    <style>
+        .inline {
+                    /* Inline elements are arranged in a row, occupying only the width necessary for their content. 
+                    They can contain only other inline elements or text. */
+            background-color: lightgreen;
+            margin: 0 5px;
+            padding: 5px;
+        }
+        .blocky {
+                    /* Block elements always start on a new line and take up the full available width. 
+                    They can contain both other block elements and inline elements. */
+            margin: 1px;
+        }
+        .inline-to-block {
+            display: block;
+            /* changes the display type of an element */
+        }
+        .block-to-inline {
+            display: inline;
+            /* changes the display type of an element */
+        }
+        div {
+            display: block;
+            margin: 50px;
+            background-color: burlywood;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="blocky">BLOCK</h1>
+    <strong class="inline">inline</strong>
+        <!-- strong is an inline element, represents strong importance for its contents -->
+    <span class="inline">spaaaaaan</span>
+        <!-- span in as inline element that is useful when used with the global attributes likes 'class' -->
+    <p>paraparaparagraph blocky</p>
+    <div class="blocky-to-inline">its a container aaaaa</div>
+    <span class="inline">inline element (span)</span>
+    <img src="catphoto.jpg" class="inline-to-block">
+
+    <div>
+        <p>paragraphaaa inside a divv</p>
+        <img src="cat photo.webp">
+        <a href="https://en.wikipedia.org/wiki/Cat?ysclid=mugx634yi1530429537">catatattatat</a>
+    </div>
+</body>
+ 
+
+
+        <!-- .block {
+        background-color: lightblue;
+        margin: 10px 0;
+        padding: 10px;
+        } 
+        .inline {
+        background-color: lightgreen;
+        margin: 0 5px;
+        padding: 5px;
+        }
+        .inline-to-block {
+            display: block;
+        }
+        .block-to-inline {
+            display: inline;
+        }
+
+    <div class="block">Its block elements (div)</div>
+    <p class="block">Its block elements (p)</p>
+    <h1 class="block">Its block elements (h1)</h1>
+    <h1 class="block-to-inline">Its a block-to-inline elements (h1)</h1>
+
+    <span class="inline">Its inline element (span)</span>
+    <a href="#" class="inline">Its inline element (a)</a>
+    <strong class="inline">Its an inline element  (strong)</strong>
+    <span class="inline-to-block">Its an inline-to-block element (span)</span>  -->
+
+    ---------------
+
+<!-- 
+Examples of inline elements:
+    <span>
+    <a>
+    <img>
+    <strong>
+    <em>
+    <input>
+    <label>
+
+Examples of block elements:
+    <div>
+    <p>
+    <h1>, <h2>, <h3>, <h4>, <h5>, <h6>
+    <ul>, <ol>, <li>
+    <section>
+    <article>
+    <header>
+    <footer>
+    <nav> 
+-->
+
+
+
+
