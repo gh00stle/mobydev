@@ -1,0 +1,119 @@
+<!-- [3.4] Pseudo-Classes in CSS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pseudo-Classes in CSS</title>
+</head>
+<style>
+    .button:hover {
+            /* Applies when the user hovers the cursor over an element. */
+        background-color: #f10000;
+    }
+    .form-input:hover {
+            /* Applies when an element gains focus (for example, when clicked or navigated to using the keyboard). */
+        
+        border-color: #007bff;
+    }
+    .list-item:first-child {
+            /* Applies to the first element among the child elements of a parent. */
+        font-weight: bold;
+        background-color: rgb(181, 199, 238);
+    }
+    .list-item:last-child {
+            /* Applies to the last element among the child elements of a parent. */
+        font-style: italic;
+        background-color: rgb(104, 128, 180);
+
+    }
+    .list-item:nth-child(even) {
+        background-color: rgb(135, 157, 204);
+    }
+    .change-colour:hover {
+            /* Applies when the user hovers the cursor over an element. */
+        color:rgb(#9caabb)
+    }
+    .change-style:nth-child(odd) {
+            /* Applies to an element that is the nth child of its parent. */
+        font-style: italic;
+    }
+    .form2 {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 16px;
+        border: 1px solid #dfcac3;
+        border-radius: 8px;
+        background-color: #f0eae7;
+    }
+
+    /* TASK 4 */
+    .list {
+        border: 2px;
+        border-radius: 5px;
+        background-color:rgb(135, 157, 204);
+        font-style:italic;
+    }
+    .change-to-bold:hover:first-child {
+        font-weight: bold;
+        background-color: #9caabb;
+    }
+    .change-to-normal:hover {
+        font-style:normal;
+        background-color: #9caabb;
+    }
+
+</style>
+<body>
+    <form>
+        <input type="text" placeholder="input" class="form-input">
+        <button class="button">button</button>
+    </form>
+    <form class="form2">
+        <ol>
+            <li class="list-item">item 1</li>
+            <li class="list-item">item 2</li>
+            <li class="list-item">item 3</li>
+        </ol>
+        <div>
+            <a href="wikipedia.com" class="change-color" class="change-style">Wikipedia</a>
+            <a href="google.com" class="change-color" class="change-style">Google</a>
+            <div p class="change-colour" class="change-style">Paragraph</div>
+            <div p>Texxxxt</div>
+            <div span>Span text</div>
+        </div>
+    </form class="form2">
+
+    <!-- TASK 4 -->
+    <form class="list">
+        <ol>
+            <li class="change-to-bold">Text 1</li>
+            <li class="list2">Text 2</li>
+            <li class="change-to-normal">Text 3</li>
+        </ol>
+    </form class="list">
+
+</body>
+
+
+<!-- Pseudo-classes in CSS are used to set styles for elements depending on 
+their state or position in the document tree. Pseudo-classes start with 
+a colon (:) and do not affect the HTML content.
+
+:hover
+It is used when the user hovers the cursor over an element.
+
+:active
+It is applied when the element is in the activated state (for example, when a button is pressed).
+
+:focus
+It is applied when the element gets focus (for example, when clicking or using the keyboard).
+
+:(n)
+It is applied to an element that is the nth child of its parent.
+
+:first-child
+Are applied to the first element among the child elements of the parent.
+
+:last-child
+Are applied to the last element among the child elements of the parent. -->

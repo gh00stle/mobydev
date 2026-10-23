@@ -1,13 +1,19 @@
 
-Task 4: Working with dimensions and display
-1. Create several elements with different sizes.
-2. Apply the following properties:
-  - `width` and `height` — set the width and height for the elements.
-  - `overflow' — set content management if it goes beyond the boundaries 
-  of the block (for example, `hidden`, `scroll`).
+
+Task 3: Applying pseudo-classes to different elements
+1. Create several blocks (`div`) containing text elements and links.
+2. Apply the pseudo-classes `hover`, `focus`, `first-child` and `last-child`:
+  - Change the color of the link when you hover the cursor over it.
+  - Apply styles to change the appearance of odd text elements inside the block.
+
+Task 4: A combination of pseudo-classes
+1. Create an HTML page with several blocks of content.
+2. Combine different pseudo-classes:
+  - Apply styles to the elements that are the first child elements and change when the cursor is hovered over.
+  - Add styles for the elements that are in focus and are the last child elements.
 
 The final page
 1. Collect all the examples in one HTML document.
-2. Design the page by adding comments to explain the use of each property.
-3. Check that all styles are working as intended.
-Upload your homework to Github and provide a link to the repository.
+2. Create a page with comments explaining how pseudo-classes work and in what cases they can be used.
+3. Make sure that all styles are applied correctly.
+Upload your homework to GitHub and provide a link to the repository.

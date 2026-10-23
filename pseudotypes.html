@@ -1,0 +1,106 @@
+<!-- [3.4] Pseudo-Classes in CSS | EXAMPLE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pseudo-Classes in CSS | EXAMPLE </title>
+</head>
+<style>
+    .form {
+   max-width: 400px;
+   margin: 0 auto;
+   padding: 16px;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   background-color: #f9f9f9;
+}
+
+.form__label {
+   display: block;
+   margin-bottom: 8px;
+}
+.form__input {
+   width: 100%;
+   padding: 8px;
+   margin-bottom: 16px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+}
+
+.form__input:focus {
+   border-color: #007bff;
+   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.form__button {
+   width: 100%;
+   padding: 10px;
+   border: none;
+   border-radius: 4px;
+   background-color: #007bff;
+   color: #fff;
+   font-size: 16px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+.form__button:hover {
+   background-color: #0056b3;
+}
+
+.form__button:active {
+   background-color: #003d80;
+}
+
+/* EXAMPLE 2 */
+.list {
+   list-style: none;
+   padding: 0;
+}
+
+.list__item {
+   padding: 10px;
+   border: 1px solid #ccc;
+   margin-bottom: 5px;
+}
+.list__item:first-child {
+   background-color: #e0f7fa;
+   font-weight: bold;
+}
+
+.list__item:last-child {
+   background-color: #ffe0b2;
+   font-style: italic;
+}
+.list__item:nth-child(even) {
+   background-color: #f1f1f1;
+}
+
+.list__item:nth-child(3) {
+   background-color: #d1c4e9;
+   color: #fff;
+}
+
+
+</style>
+<body>
+   <form class="form">
+       <label for="username" class="form__label">Username</label>
+       <input type="text" id="username" class="form__input" placeholder="Enter your username">
+      
+       <label for="password" class="form__label">Password</label>
+       <input type="password" id="password" class="form__input" placeholder="Enter your password">
+      
+       <button type="submit" class="form__button">Login</button>
+   </form>
+
+       <!-- EXAMPLE 2 -->
+   <ul class="list">
+       <li class="list__item">Element 1</li>
+       <li class="list__item">Element 2</li>
+       <li class="list__item">Element 3</li>
+       <li class="list__item">Element 4</li>
+       <li class="list__item">Element 5</li>
+   </ul>
+</body>
