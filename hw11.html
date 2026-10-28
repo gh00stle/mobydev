@@ -1,22 +1,177 @@
 <!-- [4.2] Flexbox -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox</title>
-    <meta http-equiv="refresh" content="1">
+    <!-- <meta http-equiv="refresh" content="1"> -->
 </head>
 <style>
-    p {
+    /* Task 1 */
+    .block {
+        display: block;
+    }
+    .inline {
+        display: inline;
+    }
+    .flex {
+        display: flex;
+    }
+
+    /* Task 3 */
+    #task2 {
+        display: flex;
+        flex-direction: column;
+        /* The flex-direction property defines the direction of the main axis along which 
+            flex items will be arranged. */
+        flex-wrap: wrap;
+        /* The flex-wrap property defines how flex items will be arranged within 
+            the container if they do not fit in a single line. */
+        flex-flow: wrap;
+        /* The flex-flow property is a shorthand for combining flex-direction and flex-wrap. */
+        color: rgb(129, 129, 129);
+    }
+
+    /* Task 4 */
+    .container {
+        display: flex;
+        justify-content: space-between;
+        /* space-between: Items are distributed evenly with equal spacing between them. */
+        align-items: stretch;
+        /* stretch (default): Items are stretched to fill the container along the cross axis. */
+        align-content: space-between;
+    }
+
+    .items {
+        padding: 10px;
+        border: 1.5px solid hsl(211, 21%, 77%);
+        margin-bottom: 5px;
+        background-color: hsl(211, 21%, 90%);
         border-radius: 5px;
     }
+
+    /* Task 5 */
+    #task5 {
+        display: flex;
+
+    .item1 {
+        flex-grow: 1;
+            /* The flex-grow property defines how much a flex item can grow relative to the other flex items 
+            in the container when there is available space. */
+        flex-shrink: 1;
+            /* The flex-shrink property defines how much a flex item can shrink relative to the other flex items
+             in the container when there is insufficient space. */
+        flex-basis: 100%;
+            /* The flex-basis property defines the initial size of a flex item before the 
+            flex-grow and flex-shrink properties are applied. */
+    }
+    .item2 {
+        flex-grow: 2;
+        flex-shrink: 2;
+        flex-basis: 167%;
+    }
+    .item3 {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 67%;
+    }
+    }
+
+    /* Task 6 */
+    .task6 {
+        display: flex;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: hsl(33, 6%, 88%);
+        border: 1.5px solid hsl(33, 6%, 69%);
+    }
+
+    .e1 {
+        flex: 0 0 50%;
+        /* The flex property is a shorthand property that combines flex-grow, flex-shrink, and flex-basis. */
+    }
+    .e2 {
+        flex: 1 1 auto;
+        /* The flex property is a shorthand property that combines flex-grow, flex-shrink, and flex-basis. */
+    }
+    .e3 {
+        flex: 0 0 100px;
+        /* The flex property is a shorthand property that combines flex-grow, flex-shrink, and flex-basis. */
+    }
+
+    /* Task 7 */
+    .task7 {
+        display: flex;
+        justify-content: space-evenly;
+        /* space-evenly: Items are distributed evenly with equal spacing around and between them. */
+        align-items: center;
+        /* center: Items are aligned to the center of the cross axis. */
+    }
+    /* Task 8 */
+    .task8 {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: silver;
+    }
+    .card {
+        flex: 1 1 200px;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: hsl(33, 6%, 88%);
+        border: 1.5px solid hsl(33, 6%, 69%);
+        margin: 5px;
+    }
 </style>
+
 <body>
-    <p> hello </p>
+    <!-- Task 1 -->
+    <div>
+        <div class="block">Block</div>
+        <div class="inline">Inline</div>
+        <div class="flex">Flex</div>
+    </div>
+    <!-- Task 2 -->
+    <div id="task2">
+        <p>Child element 1</p>
+        <p>Child element 2</p>
+        <p>Child element 3</p>
+        <p>Child element 4</p>
+    </div>
+    <!-- Task 4 -->
+    <div class="container">
+        <h3 class="items">Child 1</h3>
+        <h3 class="items">Child 2</h3>
+        <h3 class="items">Child 3</h3>
+    </div>
+    <!-- TASK 5 -->
+    <div id="task5">
+        <h5 class="item1"> Item 1 </h5>
+        <h5 class="item2"> Item 2 </h5>
+        <h5 class="item3"> Item 3 </h5>
+    </div>
+    <!-- Task 6 -->
+    <div class="task6">
+        <p class="e1">Element 1</p>
+        <p class="e2">Element 2</p>
+        <p class="e3">Element 3</p>
+    </div>
+    <!-- Task 7 -->
+    <div class="task7">
+        <a href="x">Home</a>
+        <a href="x">Contact Us</a>
+        <a href="x">Location</a>
+    </div>
+    <!-- Task 8 -->
+    <div class="task8">
+        <h6 class="card">Card 1</h6>
+        <h6 class="card">Card 2</h6>
+        <h6 class="card">Card 3</h6>
+        <h6 class="card">Card 4</h6>
+        <h6 class="card">Card 5</h6>
+        <h6 class="card">Card 6</h6>
+    </div>
+
+
 </body>
-
-
-
-
-

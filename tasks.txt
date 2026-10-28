@@ -1,19 +1,50 @@
 
 
-Task 3: Applying pseudo-classes to different elements
-1. Create several blocks (`div`) containing text elements and links.
-2. Apply the pseudo-classes `hover`, `focus`, `first-child` and `last-child`:
-  - Change the color of the link when you hover the cursor over it.
-  - Apply styles to change the appearance of odd text elements inside the block.
+Task 1: `display` property
+1. Create 3 `div` elements and apply the following `display` property values:
+   - First element — `block`
+   - Second element — `inline`
+   - Third element — `flex`
+Observe how the `display` of elements changes on the page with different display values.
 
-Task 4: A combination of pseudo-classes
-1. Create an HTML page with several blocks of content.
-2. Combine different pseudo-classes:
-  - Apply styles to the elements that are the first child elements and change when the cursor is hovered over.
-  - Add styles for the elements that are in focus and are the last child elements.
+Task 2: Flex container
+1. Create a `div` container with several child elements.
+2. Apply `display: flex` to the container and observe how the elements automatically align in a single row.
 
-The final page
-1. Collect all the examples in one HTML document.
-2. Create a page with comments explaining how pseudo-classes work and in what cases they can be used.
-3. Make sure that all styles are applied correctly.
-Upload your homework to GitHub and provide a link to the repository.
+Task 3: `flex-direction`, `flex-wrap`, `flex-flow`
+1. To the flex container from the previous task, add the following:
+   - Apply `flex-direction`: column to arrange elements vertically.
+   - Apply `flex-wrap` to allow elements to wrap onto a new line when space is insufficient.
+   - Use the shorthand property `flex-flow` to combine direction and wrapping.
+
+Task 4: Aligning elements
+1. Use a flex container and several child elements. Apply the following properties:
+   - `justify-content` to horizontally align elements (e.g., center)
+   - `align-items` to vertically align items inside the container
+   - `align-content` to control the alignment of all rows in the flex container
+
+Task 5: `flex-grow`, `flex-shrink`, `flex-basis` and flex shorthand
+1. Create a flex container with three items.
+2. Apply different values of `flex-grow`, `flex-shrink`, and `flex-basis` to each element to control their sizes.
+3. Use the shorthand `flex` property to set all parameters for each item in a single line.
+
+Task 6: Practical task
+1. Create a block with three elements inside using Flexbox. Position them as follows:
+   - The first element takes up 50% of the container's width.
+   - The second element takes the remaining space and stretches when the container grows.
+   - The third element remains a fixed size (e.g., 100px).
+
+Task 7: Center-aligned navigation menu
+Create a horizontal navigation menu using Flexbox where links are centered.
+1. Create a menu container and add several `<a>` links.
+2. Use Flexbox to center links horizontally and distribute them evenly.
+3. Implement the menu and experiment with different values of `justify-content` and `align-items` to align the links.
+
+Task 8: Card gallery
+Create a simple card gallery using Flexbox where all cards are aligned to a grid.
+1. Use Flexbox to place the cards in multiple columns and distribute them evenly across the container width.
+2. Implement a gallery with multiple cards.
+3. Try changing the value of the flex property and use flex-grow, flex-shrink, and flex-basis to adjust the size of the cards.
+
+**Requirements:**
+- Upload the homework to GitHub and share the repository link.
