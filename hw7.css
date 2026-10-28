@@ -26,7 +26,7 @@ p {
 }
 
 .image {
-    background-image: url('catphoto.jpg');
+    background-image: url('images/catphoto.jpg');
         /* background-image: задает фоновое изображение для элемента. */
     height: 400px;
         /*height задает высоту элемента*/
